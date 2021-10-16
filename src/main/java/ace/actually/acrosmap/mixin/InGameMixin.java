@@ -44,7 +44,7 @@ public class InGameMixin {
                     {
                         try{
                             MaterialColour c = BlockBase.BY_ID[blockid].material.field_973;
-                            //todo: find a way to store map data for a "world map" view
+
                             minecraft.textRenderer.drawText(".",k+50,l+50,c.colour);
                         }catch(Exception ignored)
                         {
@@ -59,7 +59,28 @@ public class InGameMixin {
         }
         else
         {
-            AcrosMap.map.save();
+            //AcrosMap.map.save();
+            for (int k = 0; k < 4; k++) {
+                for (int l = 0; l < 4; l++) {
+                    String key = (100*k)+","+(100*l);
+                    if(AcrosMap.map.map.containsKey(key))
+                    {
+                        for (int m = 0; m < 100; m++) {
+                            for (int n = 0; n < 100; n++) {
+
+                                try{
+                                    MaterialColour c = BlockBase.BY_ID[AcrosMap.map.map.get(key)[m][n]].material.field_973;
+
+                                    minecraft.textRenderer.drawText(".",k*100+m,l*100+n,c.colour);
+                                }catch(Exception ignored)
+                                {
+                                    minecraft.textRenderer.drawText(".",k*100+m,l*100+n,0);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
     }

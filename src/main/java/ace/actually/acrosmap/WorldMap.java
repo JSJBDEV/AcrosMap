@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class WorldMap {
-    HashMap<String,int[][]> map;
+    public HashMap<String,int[][]> map;
 
     public WorldMap()
     {
@@ -32,7 +32,15 @@ public class WorldMap {
         {
             page = new int[100][100];
         }
-        page[x%100][y%100]=id;
+        if(x<0)
+        {
+            x=100+x;
+        }
+        if(y<0)
+        {
+            y=100+y;
+        }
+        page[(x%100)][(y%100)]=id;
         map.put(k,page);
     }
 

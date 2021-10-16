@@ -18,7 +18,7 @@
 
   "environment": "*",
   "entrypoints": {
-    "main": [
+    "stationmod": [
       "ace.actually.acrosmap.AcrosMap"
     ]
   },
