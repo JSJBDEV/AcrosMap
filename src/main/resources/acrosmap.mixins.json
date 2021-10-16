@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ace.actually.acrosmap.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "ExampleMixin",
+    "InGameMixin"
+  ],
+  "server": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
