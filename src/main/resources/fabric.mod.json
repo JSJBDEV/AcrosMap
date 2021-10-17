@@ -4,16 +4,16 @@
   "version": "${version}",
 
   "name": "Acro's Map",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "A minimap I suppose",
   "authors": [
-    "Me!"
+    "Acrogenous"
   ],
   "contact": {
-    "homepage": "https://glass-launcher.net/",
-    "sources": "https://github.com/calmilamsy/BIN-fabric-example-mod"
+    "homepage": "https://github.com/JSJBDEV/AcrosMap/releases",
+    "sources": "https://github.com/JSJBDEV/AcrosMap"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/acrosmap/icon.png",
 
   "environment": "*",

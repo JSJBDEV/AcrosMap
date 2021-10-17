@@ -4,7 +4,9 @@
   "package": "ace.actually.acrosmap.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "AbstractClientPlayerMixin",
     "ExampleMixin",
+    "GameOptionsMixin",
     "InGameMixin"
   ],
   "server": [
